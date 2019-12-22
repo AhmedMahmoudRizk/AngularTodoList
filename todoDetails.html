@@ -1,0 +1,20 @@
+<h1>{{ todo.title }}</h1>
+<button type="submit" ng-click="editTask()" class="btn btn-primary">Edit Task </button>
+<button type="submit" ng-click="deleteItem()" class="btn btn-primary">Delete Task </button>
+Title: <textarea>{{ todo.title }}</textarea>
+completed: <input type="checkbox" ng-model="todo.completed">
+Desc: <textarea>{{ todo.desc }}</textarea>
+category : <p><select ng-model="operator1">
+        <option ng-option value="">category1</option>
+        <option>category2</option>
+        <option>category3</option>
+        <option>category4</option>
+    </select>
+</p>
+subcategory : <p><select ng-model="operator2">
+        <option ng-option value="">subcategory1</option>
+        <option>subcategory2</option>
+        <option>subcategory3</option>
+        <option>subcategory4</option>
+    </select>
+</p>

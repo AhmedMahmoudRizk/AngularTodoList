@@ -1,0 +1,14 @@
+<!-- <button type="submit" ng-click="addNewTask()" class="btn btn-primary">Add New Task </button> -->
+<a href="#!/addtask" class="btn btn-link">Add Task</a>
+Search: <input type="text" ng-model="search.title">
+<ul>
+    <li ng-repeat="todo in todos | filter: search">
+        <input type="checkbox" ng-model="todo.completed">
+        <!-- <a href="#!/{{todo.id}}">{{todo.title}}</a> -->
+        <a href="#!/{{$index}}">{{todo.title}}</a>
+
+        <!-- <a href="#!/zzz">{{todo.title}}</a> -->
+
+        <!-- add Date  -->
+    </li>
+</ul>

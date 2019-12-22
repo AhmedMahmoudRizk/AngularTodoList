@@ -1,0 +1,22 @@
+<!-- <h1>{{ todo.title }}</h1> -->
+<button type="submit" ng-click="addItem(title, completed, desc, operator1, operator2)" class="btn btn-primary">Add New
+    Task </button>
+<!-- <a href="#!/main1" class="btn btn-link" ng-click="addItem(dfdf)">Add Task</a> -->
+Title: <textarea ng-model="title"></textarea>
+completed: <input type="checkbox" ng-model="completed">
+Desc: <textarea ng-model="desc"></textarea>
+
+category : <p><select ng-model="operator1">
+        <option>category1</option>
+        <option>category2</option>
+        <option>category3</option>
+        <option>category4</option>
+    </select>
+</p>
+subcategory : <p><select ng-model="operator2">
+        <option>subcategory1</option>
+        <option>subcategory2</option>
+        <option>subcategory3</option>
+        <option>subcategory4</option>
+    </select>
+</p>
